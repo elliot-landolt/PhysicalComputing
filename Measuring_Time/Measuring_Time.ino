@@ -1,0 +1,1 @@
+/*Measuring Time*/void setup() {  Serial.begin(9600);  }void loop() {  int time = millis();  delay(1000);  int delta = millis() - time;  Serial.println(delta);}

@@ -1,0 +1,1 @@
+/*Flickering Light*/void setup() {  Serial.begin(9600);   Serial.println(random(1, 7)); // random(min(optional), max)  Serial.println(random(1, 7));  pinMode(6, OUTPUT); // analog pin  pinMode(5, OUTPUT); // analog pin  }void loop() {  analogWrite(6, random(50, 256));    analogWrite(5, random(50, 256));  delay(random(30, 100));}

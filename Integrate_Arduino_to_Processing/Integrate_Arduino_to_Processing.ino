@@ -1,0 +1,1 @@
+/*Integrate Arduino to Processing*/int potPin = A1;int val;void setup(){ pinMode(potPin, INPUT); Serial.begin(9600);}void loop(){ val = analogRead(potPin)/4; Serial.println(val); delay(10);}
